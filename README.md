@@ -1,8 +1,26 @@
-# ds-codigos-postales-ine-es
+# codigos-postales-espana-json
 
 Dataset que proporciona un listado de todos los códigos postales de España asociados a los municipios y unidades poblacionales.
 
 Usa como fuente el Callejero del Censo Electoral (INE).
+
+Antes de nada agradecer el gran trabajo de Iñigo Flores ya que este es un fork de su proyecto que convierte los datos de CSV a JSON para que se puedan tratar mejor desde proyectos Javascript. 
+
+> [!WARNING]
+> Este repositorio es un fork con modificaciones del proyecto original para adaptarlo a las necesidades específicas de desarrollo en JavaScript. Para acceder al dataset original y obtener la versión más actualizada, por favor visita el [repositorio original de Code for Spain](https://github.com/inigoflores/ds-codigos-postales-ine-es).
+
+## Para ejecutar la conversión
+Lanza uno de estos comandos
+```bash
+pnpm install
+pnpm run dev
+```
+
+O bien
+```bash
+npm install
+npm run dev
+```
 
 
 
@@ -11,6 +29,7 @@ Usa como fuente el Callejero del Censo Electoral (INE).
 - URL: `http://www.ine.es/prodyser/callejero/caj_esp/caj_esp_[MM][YYYY].zip` donde `MM` es el mes (01 ó 07) y la cadena `YYYY` es el último año
 - Tipo: Texto de ancho fijo comprimido (.zip)
 - Datos procesados: [/data/codigos_postales_municipios.csv](data/codigos_postales_municipios.csv)
+- Datos procesados en formato JSON: [/data/codigos_postales_municipios.json](data/codigos_postales_municipios.json)
 
 
 ### Formato de los datos
@@ -42,6 +61,7 @@ Ejemplo en CSV:
 - URL: `http://www.ine.es/prodyser/callejero/caj_esp/caj_esp_[MM][YYYY].zip` donde `MM` es el mes (01 ó 07) y la cadena `YYYY` es el último año
 - Tipo: Texto de ancho fijo comprimido (.zip)
 - Datos procesados: [/data/codigos_postales_municipios_entidades.csv](data/codigos_postales_municipios_entidades.csv)
+- Datos procesados en formato JSON: [/data/codigos_postales_municipios_entidades.json](data/codigos_postales_municipios_entidades.json)
 
 
 ### Formato de los datos
@@ -105,6 +125,7 @@ Ejemplo en CSV:
 - URL: `http://www.ine.es/prodyser/callejero/caj_esp/caj_esp_[MM][YYYY].zip` donde `MM` es el mes (01 ó 07) y la cadena `YYYY` es el año, (desde 2013 hasta la actualidad))
 - Tipo: Texto de ancho fijo comprimido (.zip)
 - Datos procesados: [/data/codigos_postales_municipiosid_historical.csv](data/codigos_postales_municipiosid_historical.csv)
+- Datos procesados en formato JSON: [/data/codigos_postales_municipiosid_historical.json](data/codigos_postales_municipiosid_historical.json)
 
 En este caso no se incluye el nombre del municipio. 
 
@@ -129,6 +150,7 @@ En el ejemplo se aprecia como en julio de 2013 desaparece el código postal 2962
 - URL: `http://www.ine.es/prodyser/callejero/caj_esp/caj_esp_[MM][YYYY].zip` donde `MM` es el mes (01 ó 07) y la cadena `YYYY` es el año, (desde 2013 hasta la actualidad))
 - Tipo: Texto de ancho fijo comprimido (.zip)
 - Datos procesados: [/data/codigos_postales_municipiosid_entidades_historical.csv](data/codigos_postales_municipiosid_entidades_historical.csv)
+- Datos procesados en formato JSON: [/data/codigos_postales_municipiosid_entidades_historical.json](data/codigos_postales_municipiosid_entidades_historical.json)
 
 En este caso no se incluye el nombre del municipio. 
 
