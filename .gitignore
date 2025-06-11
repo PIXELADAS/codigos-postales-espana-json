@@ -13,3 +13,7 @@ Icon?
 ehthumbs.db
 Thumbs.db
 *~
+
+# NODE JS #
+##################
+node_modules/
